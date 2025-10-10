@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #6b4ce6;
+    background-color: #BF5700;
     color: white;
     text-align: center;
     padding: 3rem 1rem;
@@ -34,7 +34,7 @@ header p {
 
 .header-buttons .button {
     background-color: white;
-    color: #6b4ce6;
+    color: #BF5700;
     padding: 0.6rem 1.2rem;
     border-radius: 8px;
     font-weight: 600;
@@ -69,7 +69,7 @@ section {
 }
 
 h2 {
-    color: #6b4ce6;
+    color: #BF5700;
     border-bottom: 2px solid #ddd;
     padding-bottom: 0.5rem;
 }
