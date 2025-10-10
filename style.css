@@ -14,13 +14,40 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.2rem;
+    font-size: 2.3rem;
+    margin: 0.5rem 0;
 }
 
 header p {
     font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 1rem;
+}
+
+.header-buttons .button {
+    background-color: white;
+    color: #6b4ce6;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.header-buttons .button:hover {
+    background-color: #e9e9ff;
+}
+
+nav {
+    margin-top: 1.2rem;
 }
 
 nav a {
@@ -60,4 +87,25 @@ footer {
     padding: 1rem;
     background-color: #f1f1f1;
     font-size: 0.9rem;
+}
+
+/* 📱 Responsive tweaks for phones */
+@media (max-width: 600px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-buttons .button {
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    section {
+        margin: 2rem 0;
+    }
 }
