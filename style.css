@@ -14,7 +14,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     margin: 0.5rem 0;
 }
 
@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 section {
-    max-width: 800px;
+    max-width: 900px;
     margin: 3rem auto;
     padding: 0 1rem;
 }
@@ -74,10 +74,29 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-.project {
+ul {
+    margin-top: 0.5rem;
+}
+
+.job,
+.project,
+.leadership {
     background: white;
     padding: 1rem 1.5rem;
     margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.skills-grid div {
+    background: white;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
@@ -89,14 +108,14 @@ footer {
     font-size: 0.9rem;
 }
 
-/* 📱 Responsive tweaks for phones */
+/* 📱 Responsive tweaks */
 @media (max-width: 600px) {
     header {
         padding: 2rem 1rem;
     }
 
     header h1 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
     .header-buttons .button {
