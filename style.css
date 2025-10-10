@@ -4,6 +4,17 @@ body {
     background-color: #fafafa;
     color: #222;
     line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light {
+    background-color: #fafafa;
+    color: #222;
+}
+
+.dark {
+    background-color: #1e1e1e;
+    color: #eee;
 }
 
 header {
@@ -11,6 +22,16 @@ header {
     color: white;
     text-align: center;
     padding: 3rem 1rem;
+    position: relative;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 1rem;
 }
 
 header h1 {
@@ -21,15 +42,6 @@ header h1 {
 header p {
     font-size: 1.1rem;
     margin-bottom: 1.2rem;
-}
-
-.profile-pic {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-    margin-bottom: 1rem;
 }
 
 .header-buttons .button {
@@ -47,7 +59,7 @@ header p {
 }
 
 nav {
-    margin-top: 1.2rem;
+    margin-top: 1rem;
 }
 
 nav a {
@@ -68,37 +80,46 @@ section {
     padding: 0 1rem;
 }
 
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 h2 {
     color: #6b4ce6;
     border-bottom: 2px solid #ddd;
     padding-bottom: 0.5rem;
 }
 
-ul {
-    margin-top: 0.5rem;
-}
-
-.job,
-.project,
-.leadership {
+.card {
     background: white;
     padding: 1rem 1.5rem;
     margin-top: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dark .card {
+    background: #2b2b2b;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-}
-
-.skills-grid div {
-    background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 footer {
@@ -108,20 +129,29 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Fade-in animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+.dark footer {
+    background-color: #222;
+    color: #ccc;
 }
 
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+.dark-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: #fff;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1000;
 }
 
+.dark .dark-toggle {
+    background: #333;
+    color: #fff;
+}
 
-/* 📱 Responsive tweaks */
 @media (max-width: 600px) {
     header {
         padding: 2rem 1rem;
@@ -129,12 +159,6 @@ footer {
 
     header h1 {
         font-size: 1.9rem;
-    }
-
-    .header-buttons .button {
-        display: inline-block;
-        margin-top: 0.5rem;
-        font-size: 0.9rem;
     }
 
     section {

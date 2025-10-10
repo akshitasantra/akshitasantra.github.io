@@ -13,7 +13,11 @@
     </style>
 </head>
 
-<body>
+<body class="light">
+
+    <!-- Dark mode toggle -->
+    <button id="darkModeToggle" class="dark-toggle">🌙</button>
+
     <header>
         <img src="profile.jpg" alt="Profile photo of Akshita Santra"
             class="profile-pic" />
@@ -32,203 +36,214 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi! I'm Akshita — a Computer Science student at The University of
-            Texas at Austin,
-            pursuing minors in Business and Robotics. I’m passionate about
-            software engineering,
-            robotics, and educational technology. I love building intuitive
-            systems,
-            modular codebases, and interfaces that make technology accessible to
-            everyone.
-        </p>
-        <p>
-            <b>Education:</b> B.S. in Computer Science, Minors in Business and
-            Robotics — GPA: 3.83 (May 2028)
-        </p>
-        <p>
-            <b>Relevant Coursework:</b> Operating Systems, Linear Algebra,
-            Computer Architecture,
-            Data Structures, Discrete Mathematics
-        </p>
-    </section>
+    <main>
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Akshita — a Computer Science student at The University
+                of Texas at Austin,
+                pursuing minors in Business and Robotics. I’m passionate about
+                software engineering,
+                robotics, and educational technology. I love building intuitive
+                systems,
+                modular codebases, and interfaces that make technology
+                accessible to everyone.
+            </p>
+            <p>
+                <b>Education:</b> B.S. in Computer Science, Minors in Business &
+                Robotics — GPA: 3.83 (May 2028)
+            </p>
+            <p>
+                <b>Relevant Coursework:</b> Operating Systems, Linear Algebra,
+                Computer Architecture,
+                Data Structures, Discrete Mathematics
+            </p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div>
-                <h3>Languages</h3>
-                <p>Java, C#, C++, Python, C, ASM, JavaScript, HTML/CSS, MATLAB,
-                    TypeScript, R</p>
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Languages</h3>
+                    <p>Advanced: Java, C#, C++, Python, C, ASM</p>
+                    <p>Intermediate: JavaScript, HTML/CSS, MATLAB</p>
+                    <p>Beginner: TypeScript, R</p>
+                </div>
+                <div>
+                    <h3>Technical Skills</h3>
+                    <p>Arduino, Multithreading, BLE, Modbus Comms, Unity, Git,
+                        Scrum</p>
+                    <p>TensorFlow, Machine Learning, React, Vite, Node.js,
+                        Express, Prisma, PostgreSQL</p>
+                    <p>WebSockets, Docker, MongoDB</p>
+                </div>
+                <div>
+                    <h3>Certifications</h3>
+                    <p>Oracle Certified Associate - Java SE 8 Programmer (Issued
+                        May 2024)</p>
+                </div>
             </div>
-            <div>
-                <h3>Technical Skills</h3>
-                <p>Arduino, Multithreading, Bluetooth (BLE), Modbus Comms,
-                    Unity, Git, Scrum, TensorFlow,
-                    Machine Learning, React, Vite, Node.js, Express, Prisma,
-                    PostgreSQL, WebSockets, Docker, MongoDB</p>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="card">
+                <h3>Aramco Americas – Robotics & Autonomous Systems Intern</h3>
+                <p><i>Houston, TX | May 2025 – August 2025</i></p>
+                <ul>
+                    <li>Programmed two robots collecting oil well data,
+                        developing modular C++ firmware for 20+ hardware
+                        components.</li>
+                    <li>Built Python-based GUIs with BLE connectivity,
+                        multithreaded workflows, and matplotlib dashboards.</li>
+                    <li>Enabled reliable MATLAB ↔ Arduino data exchange via
+                        Modbus Comms with zero packet loss.</li>
+                </ul>
             </div>
-            <div>
-                <h3>Certifications</h3>
-                <p>Oracle Certified Associate - Java SE 8 Programmer (Issued May
-                    2024)</p>
+
+            <div class="card">
+                <h3>NanoAssembly Lab – Research Assistant</h3>
+                <p><i>Austin, TX | December 2024 – Present</i></p>
+                <ul>
+                    <li>Created a deep learning framework for SAXS analysis,
+                        reducing error rates by ~73%.</li>
+                    <li>Trained a 1D-CPNN model on 24,000+ SAXS profiles
+                        (R²=0.987), improving prediction accuracy by ~79% over
+                        baseline.</li>
+                    <li>Developed GUI & executable to allow researchers to run
+                        micelle predictions 10³–10⁶× faster.</li>
+                </ul>
             </div>
-        </div>
-    </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Aramco Americas – Robotics & Autonomous Systems Intern</h3>
-            <p><i>Houston, TX | May 2025 – August 2025</i></p>
-            <ul>
-                <li>Programmed two robots that collect oil well data to enhance
-                    field safety and sustainability, developing modular C++
-                    firmware for 20+ hardware components.</li>
-                <li>Developed Python-based GUIs with BLE connectivity and
-                    multithreaded state workflows using NumPy/Pandas and
-                    matplotlib for visualization.</li>
-                <li>Enabled reliable MATLAB ↔ Arduino data exchange via Modbus
-                    Comms with zero packet loss.</li>
-            </ul>
-        </div>
+            <div class="card">
+                <h3>SWE – Visualizing Math Developer</h3>
+                <p><i>Austin, TX | August 2024 – May 2025</i></p>
+                <ul>
+                    <li>Built full-stack educational website with quizzes and
+                        interactive graphing tools (HTML/CSS/JS).</li>
+                    <li>Integrated Firebase Firestore & MongoDB to track user
+                        progress and deliver personalized learning paths.</li>
+                    <li>Collaborated with 5 SWE members, improving student quiz
+                        scores by 30%.</li>
+                </ul>
+            </div>
 
-        <div class="job">
-            <h3>NanoAssembly Lab – Research Assistant</h3>
-            <p><i>Austin, TX | December 2024 – Present</i></p>
-            <ul>
-                <li>Systematized a deep learning framework for SAXS analysis,
-                    reducing error rates by ~73% to enhance nanoparticle design
-                    efficiency.</li>
-                <li>Developed and trained a 1D-CPNN model on 24,000+ SAXS
-                    profiles (R²=0.987), improving prediction accuracy by ~79%
-                    over baseline methods.</li>
-                <li>Created a GUI and executable in Python, allowing researchers
-                    to run micelle structure predictions 10³–10⁶× faster without
-                    coding expertise.</li>
-            </ul>
-        </div>
+            <div class="card">
+                <h3>Microsoft – Blacks at Microsoft Apprenticeship</h3>
+                <p><i>Houston, TX | July 2023 – August 2023</i></p>
+                <ul>
+                    <li>Taught Python to 20+ apprentices, enhancing team
+                        programming skills.</li>
+                    <li>Built multithreaded Python chat app; won 1st place in
+                        Houston Microsoft Python Competition.</li>
+                    <li>Directed 1st-place hackathon team to build smart glasses
+                        aiding dementia patients.</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="job">
-            <h3>Society of Women Engineers (SWE) – Visualizing Math Developer
-            </h3>
-            <p><i>Austin, TX | August 2024 – May 2025</i></p>
-            <ul>
-                <li>Developed a full-stack educational website on Algebra and
-                    Geometry with quizzes and interactive graphing tools (HTML,
-                    CSS, JavaScript).</li>
-                <li>Integrated Firebase Firestore (prod) and MongoDB (dev) to
-                    store user progress for personalized learning paths.</li>
-                <li>Collaborated with 5 SWE members to create inclusive math
-                    learning resources, improving quiz scores by 30%.</li>
-            </ul>
-        </div>
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
 
-        <div class="job">
-            <h3>Microsoft – Blacks at Microsoft Apprenticeship Program</h3>
-            <p><i>Houston, TX | July 2023 – August 2023</i></p>
-            <ul>
-                <li>Taught Python to 20+ apprentices, strengthening programming
-                    fundamentals through collaborative learning.</li>
-                <li>Built a multithreaded Python chat server-client app; won 1st
-                    place in Houston Microsoft Python Competition.</li>
-                <li>Directed a 1st-place hackathon team to build smart glasses
-                    that assist dementia patients.</li>
-            </ul>
-        </div>
-    </section>
+            <div class="card">
+                <h3>Health IoT Dashboard</h3>
+                <p><i>React, TypeScript, Vite, Express, Prisma, PostgreSQL,
+                        Docker, WebSockets | October 2025</i></p>
+                <ul>
+                    <li>Built a realtime healthcare IoT dashboard with
+                        telemetry, charting, and simulated device data.</li>
+                    <li>Deployed full stack on Render with automated Docker
+                        builds and WebSocket connectivity.</li>
+                </ul>
+            </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Health IoT Dashboard</h3>
-            <p><i>React, TypeScript, Vite, Express, Prisma, PostgreSQL, Docker,
-                    WebSockets, Render | October 2025</i></p>
-            <ul>
-                <li>Built a realtime healthcare dashboard with live telemetry,
-                    charting, and simulated device data.</li>
-                <li>Deployed full stack on Render with automated Docker builds
-                    and WebSocket connectivity.</li>
-            </ul>
-        </div>
+            <div class="card">
+                <h3>SimuCare – NREMT Study Simulator</h3>
+                <p><i>Python | June 2025 – Present</i></p>
+                <ul>
+                    <li>Interactive Python GUI simulating emergency medical
+                        scenarios, increasing practice efficiency by ~40%.</li>
+                    <li>Modular JSON-driven intervention engine replicating
+                        realistic EMT exam conditions.</li>
+                </ul>
+            </div>
 
-        <div class="project">
-            <h3>SimuCare – NREMT Study Simulator</h3>
-            <p><i>Python | June 2025 – Present</i></p>
-            <ul>
-                <li>Created an interactive Python GUI for emergency medical
-                    scenario simulation.</li>
-                <li>Designed modular JSON-based intervention trees to replicate
-                    realistic EMT exam conditions.</li>
-            </ul>
-        </div>
+            <div class="card">
+                <h3>Dynamic Memory Allocator</h3>
+                <p><i>C | February 2025</i></p>
+                <ul>
+                    <li>Implemented malloc/free using explicit free lists with
+                        coalescing and block splitting.</li>
+                    <li>Ranked 14th of 500+ students on course leaderboard for
+                        space utilization and throughput.</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="project">
-            <h3>Dynamic Memory Allocator</h3>
-            <p><i>C | February 2025</i></p>
-            <ul>
-                <li>Implemented malloc/free using explicit free lists with
-                    coalescing and block splitting.</li>
-                <li>Ranked 14th of 500+ students on course leaderboard for space
-                    utilization and throughput.</li>
-            </ul>
-        </div>
-    </section>
+        <!-- Leadership -->
+        <section id="leadership">
+            <h2>Leadership & Activities</h2>
 
-    <section id="leadership">
-        <h2>Leadership & Activities</h2>
-        <div class="leadership">
-            <h3>Student Engineers Educating Kids (SEEK) – Program Officer</h3>
-            <p><i>Austin, TX | January 2025 – Present</i></p>
-            <ul>
-                <li>Lead weekly STEM mentoring sessions for 25+ elementary
-                    students and guide 15+ mentors.</li>
-                <li>Coordinate logistics and foster engagement between mentors
-                    and school staff.</li>
-            </ul>
-        </div>
+            <div class="card">
+                <h3>SEEK – Program Officer</h3>
+                <p><i>Austin, TX | January 2025 – Present</i></p>
+                <ul>
+                    <li>Lead weekly STEM sessions for 25+ elementary students
+                        and guide 15+ mentors.</li>
+                    <li>Coordinate logistics and maintain engagement between
+                        mentors and schools.</li>
+                </ul>
+            </div>
 
-        <div class="leadership">
-            <h3>FIRST Robotics Team – Captain & Programming Lead</h3>
-            <p><i>Tomball, TX | August 2020 – May 2024</i></p>
-            <ul>
-                <li>Programmed all robot functionality in Java; consistently
-                    scored 22+ autonomous points.</li>
-                <li>Secured sponsors and $2,500 in funding after team’s
-                    501(c)(3) loss, enabling World Championship competition.
-                </li>
-            </ul>
-        </div>
-    </section>
+            <div class="card">
+                <h3>FIRST Robotics Team – Captain & Programming Lead</h3>
+                <p><i>Tomball, TX | August 2020 – May 2024</i></p>
+                <ul>
+                    <li>Programmed robot functionality in Java; consistently
+                        scored 22+ autonomous points.</li>
+                    <li>Secured sponsors and $2,500 funding after team’s
+                        501(c)(3) loss, enabling World Championship
+                        participation.</li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a
-                href="mailto:akshitasantra@utexas.edu">akshitasantra@utexas.edu</a>
-        </p>
-        <p>
-            <a href="https://github.com/akshitasantra"
-                target="_blank">GitHub</a> |
-            <a href="https://linkedin.com/in/akshita-santra"
-                target="_blank">LinkedIn</a>
-        </p>
-    </section>
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a
+                    href="mailto:akshitasantra@utexas.edu">akshitasantra@utexas.edu</a>
+            </p>
+            <p>
+                <a href="https://github.com/akshitasantra"
+                    target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/akshita-santra"
+                    target="_blank">LinkedIn</a>
+            </p>
+        </section>
+    </main>
 
     <footer>
         <p>© 2025 Akshita Santra</p>
     </footer>
 
+    <!-- JS: dark mode + fade-ins -->
     <script>
-        // Fade-in animation on scroll
+        const toggle = document.getElementById('darkModeToggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            document.body.classList.toggle('light');
+            toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+        });
+
         const faders = document.querySelectorAll('section');
-
-        const appearOptions = {
-            threshold: 0.1
-        };
-
-        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+        const appearOptions = { threshold: 0.1 };
+        const appearOnScroll = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
@@ -242,7 +257,6 @@
             appearOnScroll.observe(fader);
         });
     </script>
-
 </body>
 
 </html>
