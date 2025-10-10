@@ -206,12 +206,12 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a
-                href="mailto:akshita.santra@utexas.edu">akshita.santra@utexas.edu</a>
+                href="mailto:akshitasantra@utexas.edu">akshitasantra@utexas.edu</a>
         </p>
         <p>
             <a href="https://github.com/akshitasantra"
                 target="_blank">GitHub</a> |
-            <a href="https://linkedin.com/in/akshitasantra"
+            <a href="https://linkedin.com/in/akshita-santra"
                 target="_blank">LinkedIn</a>
         </p>
     </section>
@@ -220,29 +220,7 @@
         <p>© 2025 Akshita Santra</p>
     </footer>
 
-    <script>
-        // Fade-in animation on scroll
-        const faders = document.querySelectorAll('section');
-
-        const appearOptions = {
-            threshold: 0.1
-        };
-
-        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, appearOptions);
-
-        faders.forEach(fader => {
-            fader.classList.add('fade-in');
-            appearOnScroll.observe(fader);
-        });
-    </script>
-
+    
 </body>
 
 </html>
