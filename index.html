@@ -220,7 +220,29 @@
         <p>© 2025 Akshita Santra</p>
     </footer>
 
-    
+    <script>
+        // Fade-in animation on scroll
+        const faders = document.querySelectorAll('section');
+
+        const appearOptions = {
+            threshold: 0.1
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            fader.classList.add('fade-in');
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
 </body>
 
 </html>
