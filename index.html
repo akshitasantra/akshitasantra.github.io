@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <img src="profile.jpg" alt="Profile photo of Akshita Santra"
+        <img src="images/profile.jpg" alt="Profile photo of Akshita Santra"
             class="profile-pic" />
         <h1>Akshita Santra</h1>
         <p>Computer Science @ UT Austin | Aspiring Software Engineer</p>
@@ -95,38 +95,51 @@
         </div>
 
         <div class="job">
-            <h3>NanoAssembly Lab – Research Assistant</h3>
-            <p><i>Austin, TX | December 2024 – Present</i></p>
-            <ul>
-                <li>Systematized a deep learning framework for SAXS analysis,
-                    reducing error rates by ~73% to enhance nanoparticle design
-                    efficiency.</li>
-                <li>Developed and trained a 1D-CPNN model on 24,000+ SAXS
-                    profiles (R²=0.987), improving prediction accuracy by ~79%
-                    over baseline methods.</li>
-                <li>Created a GUI and executable in Python, allowing researchers
-                    to run micelle structure predictions 10³–10⁶× faster without
-                    coding expertise.</li>
-            </ul>
+            <div class="media-row">
+                <div class="media-content">
+                    <h3>NanoAssembly Lab – Research Assistant</h3>
+                    <p><i>Austin, TX | December 2024 – Present</i></p>
+                    <ul>
+                        <li>Systematized a deep learning framework for SAXS analysis,
+                            reducing error rates by ~73%.</li>
+                        <li>Trained a 1D-CPNN model on 24,000+ SAXS profiles (R²=0.987).
+                        </li>
+                        <li>Built a Python GUI enabling 10³–10⁶× faster predictions.
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="media-gallery">
+                    <img src="images/nano1.png">
+                </div>
+            </div>
         </div>
 
+
         <div class="job">
-            <h3>Society of Women Engineers (SWE) – Visualizing Math Developer
-            </h3>
-            <p><i>Austin, TX | August 2024 – May 2025</i></p>
-            <ul>
-                <li>Developed a full-stack educational website on Algebra and
-                    Geometry with quizzes and interactive graphing tools (HTML,
-                    CSS, JavaScript).</li>
-                <li>Integrated Firebase Firestore (prod) and MongoDB (dev) to
-                    store user progress for personalized learning paths.</li>
-                <li>Collaborated with 5 SWE members to create inclusive math
-                    learning resources, improving quiz scores by 30%.</li>
-                <li><a href="https://akshitasantra.github.io/VisualizingMath/" target="_blank">View Live
-                        Site</a> | <a href="https://github.com/akshitasantra/VisualizingMath"
-                        target="_blank">GitHub</a></li>
-            </ul>
+            <div class="media-row">
+                <div class="media-content">
+                    <h3>Society of Women Engineers (SWE) – Visualizing Math Developer
+                    </h3>
+                    <p><i>Austin, TX | August 2024 – May 2025</i></p>
+                    <ul>
+                        <li>Built a full-stack math learning platform.</li>
+                        <li>Integrated Firebase (prod) and MongoDB (dev).</li>
+                        <li>
+                            <a href="https://akshitasantra.github.io/VisualizingMath/"
+                                target="_blank">Live</a> |
+                            <a href="https://github.com/akshitasantra/VisualizingMath"
+                                target="_blank">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="media-gallery">
+                    <img src="images/visualizing-math.png" alt="Visualizing Math graphing tool">
+                </div>
+            </div>
         </div>
+
 
         <div class="job">
             <h3>Microsoft – Blacks at Microsoft Apprenticeship Program</h3>
@@ -145,45 +158,64 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Object Detection with PyTorch & OpenCV</h3>
-            <p><i>Python, PyTorch, torchvision, OpenCV, Matplotlib | Personal
-                    Project</i></p>
-            <ul>
-                <li>Built a pipeline to detect and label objects in images using a
-                    pre-trained Faster R-CNN model.</li>
-                <li>Implemented bounding box visualization, probability thresholding,
-                    and class filtering for custom objects.</li>
-                <li>Gained hands-on experience with computer vision, image
-                    preprocessing, and object detection workflows.</li>
-                <li><a href="https://github.com/akshitasantra/Object-Detection"
-                        target="_blank">GitHub</a></li>
-            </ul>
-        </div>
+            <div class="media-row">
+                <div class="media-content">
+                    <h3>Object Detection with PyTorch & OpenCV</h3>
+                    <p><i>Python, PyTorch, OpenCV</i></p>
+                    <ul>
+                        <li>Implemented Faster R-CNN detection pipeline.</li>
+                        <li>Visualized bounding boxes and confidence scores.</li>
+                        <li><a href="https://github.com/akshitasantra/Object-Detection"
+                                target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
         
-        <div class="project">
-            <h3>Health IoT Dashboard</h3>
-            <p><i>React, TypeScript, Vite, Express, Prisma, PostgreSQL, Docker,
-                    WebSockets, Render | October 2025</i></p>
-            <ul>
-                <li>Built a realtime healthcare dashboard with live telemetry,
-                    charting, and simulated device data.</li>
-                <li>Deployed full stack on Render with automated Docker builds
-                    and WebSocket connectivity.</li>
-                <li><a href="https://github.com/akshitasantra/health-iot-dashboard"
-                        target="_blank">GitHub</a></li>
-            </ul>
+                <div class="media-gallery">
+                    <img src="images/object-detection.png" alt="Object detection output">
+                </div>
+            </div>
         </div>
 
+        
         <div class="project">
-            <h3>SimuCare – NREMT Study Simulator</h3>
-            <p><i>Python | June 2025 – Present</i></p>
-            <ul>
-                <li>Created an interactive Python GUI for emergency medical
-                    scenario simulation.</li>
-                <li>Designed modular JSON-based intervention trees to replicate
-                    realistic EMT exam conditions.</li>
-            </ul>
+            <div class="media-row">
+                <div class="media-content">
+                    <h3>Health IoT Dashboard</h3>
+                    <p><i>React, TypeScript, WebSockets</i></p>
+                    <ul>
+                        <li>Real-time telemetry dashboard.</li>
+                        <li>Live charts + simulated device data.</li>
+                        <li><a href="https://github.com/akshitasantra/health-iot-dashboard"
+                                target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+        
+                <div class="media-gallery">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/health-dashboard.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
         </div>
+
+
+        <div class="project">
+            <div class="media-row">
+                <div class="media-content">
+                    <h3>SimuCare – NREMT Study Simulator</h3>
+                    <p><i>Python</i></p>
+                    <ul>
+                        <li>Interactive EMT exam simulation.</li>
+                        <li>JSON-based intervention trees.</li>
+                    </ul>
+                </div>
+        
+                <div class="media-gallery">
+                    <img src="images/simucare.png" alt="SimuCare GUI">
+                </div>
+            </div>
+        </div>
+
 
         <div class="project">
             <h3>Dynamic Memory Allocator</h3>
