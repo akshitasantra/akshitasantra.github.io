@@ -120,6 +120,7 @@ footer {
     transform: translateY(0);
 }
 
+/* Two-column layout for sections that have text on the left and media on the right */
 .media-row {
     display: flex;
     gap: 1.5rem;
@@ -127,21 +128,44 @@ footer {
 }
 
 .media-content {
-    flex: 1.2;
+    flex: 1;
+    min-width: 0;
 }
 
+/* Default media block for images and regular videos */
 .media-gallery {
-    flex: 0.8;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-    gap: 0.5rem;
+    flex: 0 0 260px;
+    max-width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
 }
 
 .media-gallery img,
 .media-gallery video {
     width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
     object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    display: block;
+}
+
+/* Special sizing only for vertical vlog-style previews */
+.media-gallery--vlog {
+    flex: 0 0 220px;
+    max-width: 220px;
+}
+
+.media-gallery--vlog .media-preview {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+    background: #000;
+    border-radius: 12px;
+    display: block;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
@@ -166,5 +190,18 @@ footer {
 
     .media-row {
         flex-direction: column;
+    }
+
+    .media-gallery,
+    .media-gallery--vlog {
+        flex: 1 1 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .media-gallery--vlog .media-preview {
+        width: 100%;
+        max-width: 220px;
+        margin: 0 auto;
     }
 }
